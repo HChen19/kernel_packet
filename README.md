@@ -43,7 +43,7 @@ Kernel Packet is a MATLAB package for fast computing in Gaussian Process Modelin
   * [`<SGDesign>`](https://github.com/HChen19/kernel_packet/blob/main/SGDesign.m) is an example to use [`<sg_w>`](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/SparseGrid/sg_w.m) and [`<compute_pred>`](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/compute_pred.m) in sparse grid design.
    
 ### Others:
-  * [tensor_toolbox-master](https://github.com/HChen19/kernel_packet/tree/main/tensor_toolbox-master) is a MATLAB tensor toolbox by Brett W. Bader, Tamara G. Kolda and others, we use [sparse tensor](https://www.tensortoolbox.org/sptensor_doc.html) function `<sptensor>` in our file [sg_w](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/SparseGrid/sg_w.m). For more information please see their official website [here](https://www.tensortoolbox.org/).
+  * [tensor_toolbox-master](https://github.com/HChen19/kernel_packet/tree/main/tensor_toolbox-master) is a MATLAB tensor toolbox by Brett W. Bader, Tamara G. Kolda and others, we use [sparse tensor](https://www.tensortoolbox.org/sptensor_doc.html) function `<sptensor>` in our function [`<sg_w>`](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/SparseGrid/sg_w.m). For more information please see their official website [here](https://www.tensortoolbox.org/).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
