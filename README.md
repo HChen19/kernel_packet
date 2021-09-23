@@ -14,7 +14,7 @@ Kernel Packet is a MATLAB package for fast computing in Gaussian Process Modelin
  
 
 * [One-dimension](https://github.com/HChen19/kernel_packet/tree/main/Functions/One-Dimension):
-  * [compute_basis](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/compute_basis.m) is a function file to compute kernel packet (which also our basis function) in one dimensional [Kriging (GPR)](https://en.wikipedia.org/wiki/Kriging).
+  * [compute_basis](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/compute_basis.m) is a function file to compute kernel packet (which also our basis function) in one-dimensional [Kriging (GPR)](https://en.wikipedia.org/wiki/Kriging).
   * [compute_post](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/compute_post.m) is a function file to to compute posterior mean and covariance in one dimensional Kriging.
   * [loglike_1d](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/loglike_1d.m) is a function file to compute log likelihood of parameter 'rho' in one dimension.
   * [mle_1d](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/mle_1d.m) is a function file to compute updated parameter theta_hat, updated log likelihood L_hat and initial loglikelihood L_init in one dimensional MLE.
@@ -29,22 +29,21 @@ Kernel Packet is a MATLAB package for fast computing in Gaussian Process Modelin
     * [sg_w](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/sg_w.m) is a function file to compute multiplication of inverse of covariance matrix and a random matrix in sparse grid design.
     * [sgd](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/SparseGrid/sgd.m) is a function file to generate a structure of sparse grid design.
    
-  * [compute_pred](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/compute_pred.m) is a funciton file to compute prediction value of response (which is also the posterior mean) of high dimensional Kriging.
+  * [compute_pred](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/compute_pred.m) is a funciton file to compute prediction value of response (which is also the posterior mean) of nulti-dimensional Kriging.
   * [kron_mat_prod](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/kron_mat_prod.m) is a function file to compute matrix-matrix multiplication between matrix kron(As{1}, As{2}, ..., As{N}) and matrix v without forming the full kronecker product by using unfold and refold functions.
-  * [kron_ttm](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/kron_ttm.m) is a function file to compute matrix-matrix multiplication between matrix kron(As{1}, As{2}, ..., As{N}) and matrix m by using `<ttm>` function in [tensor_toolbox-master](https://github.com/HChen19/compact_support/tree/main/tensor_toolbox-master).
+  * [kron_ttm](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/kron_ttm.m) is a function file to compute matrix-matrix multiplication between matrix kron(As{1}, As{2}, ..., As{N}) and matrix m by using `<ttm>` function in [tensor_toolbox-master](https://github.com/HChen19/kernel_packet/tree/main/tensor_toolbox-master).
   * [refold](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/refold.m) is a function file to refold matrix into tensor.
   * [unfold](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/unfold.m) is a function file to unfold tensor into matrix.
  
   
-* Examples:
+### Examples:
   * [Example1D](https://github.com/HChen19/compact_support/blob/main/Example1D.m) is an example to use [compute_basis](https://github.com/HChen19/compact_support/blob/main/compute_basis.m) and [compute_post](https://github.com/HChen19/compact_support/blob/main/compute_post.m) function files. 
-   * [SGDesign](https://github.com/HChen19/compact_support/blob/main/SGDesign.m) is an example to use [sg_w](https://github.com/HChen19/compact_support/blob/main/sg_w.m) and [compute_pred](https://github.com/HChen19/compact_support/blob/main/compute_pred.m) in sparse grid design.
-    * [LTDeisgn](https://github.com/HChen19/compact_support/blob/main/LTDesign.m) is an example to compute multiplication of inverse of covariance matrix and response in lattice design (or called full grid design), then compute prediction value of response based on it.
+  * [SGDesign](https://github.com/HChen19/compact_support/blob/main/SGDesign.m) is an example to use [sg_w](https://github.com/HChen19/compact_support/blob/main/sg_w.m) and [compute_pred](https://github.com/HChen19/compact_support/blob/main/compute_pred.m) in sparse grid design.
+  * [FGDeisgn](https://github.com/HChen19/compact_support/blob/main/LTDesign.m) is an example to compute multiplication of inverse of covariance matrix and response in lattice design (or called full grid design), then compute prediction value of response based on it.
     * [ExampleMLE](https://github.com/HChen19/compact_support/blob/main/ExampleMLE.m) is an example to use [MLE_1d](https://github.com/HChen19/compact_support/blob/main/MLE_1d.m) and [MLE_sg](https://github.com/HChen19/compact_support/blob/main/MLE_sg.m) function files.
 
-* Others:
-  * [tensor_toolbox-master](https://github.com/HChen19/compact_support/tree/main/tensor_toolbox-master) is a MATLAB tensor toolbox by Brett W. Bader, Tamara G. Kolda and others, we use [sparse tensor](https://www.tensortoolbox.org/sptensor_doc.html) function 'sptensor' in our file [sg_w](https://github.com/HChen19/compact_support/blob/main/sg_w.m). For more information please see their official website [here](https://www.tensortoolbox.org/).
-  * [threeDplot](https://github.com/HChen19/compact_support/blob/main/threeDplot.m) is a file to plot kernel packet (our proposed basis function) with its components in 3D, which can help you understant intuitively our algorithm.
+### Others:
+  * [tensor_toolbox-master](https://github.com/HChen19/kernel_packet/tree/main/tensor_toolbox-master) is a MATLAB tensor toolbox by Brett W. Bader, Tamara G. Kolda and others, we use [sparse tensor](https://www.tensortoolbox.org/sptensor_doc.html) function `<sptensor>` in our file [sg_w](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/sg_w.m). For more information please see their official website [here](https://www.tensortoolbox.org/).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
