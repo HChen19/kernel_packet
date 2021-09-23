@@ -26,7 +26,7 @@ Kernel Packet is a MATLAB package for fast computing in Gaussian Process Modelin
   * [SparseGrid](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/SparseGrid): 
     * [sg_loglike](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/SparseGrid/sg_loglike.m) is a function file to compute log likelihood of lengthscale parameter 'rho' in Multi-dimensional sparse grid design.
     * [sg_mle](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/SparseGrid/sg_mle.m) is a function file to compute updated parameter theta_hat, updated log likelihood L_hat and initial loglikelihood L_init in Multi-dimensional MLE under sparse grid design.
-    * [sg_w](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/sg_w.m) is a function file to compute multiplication of inverse of covariance matrix and a random matrix in sparse grid design.
+    * [sg_w](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/SparseGrid/sg_w.m) is a function file to compute multiplication of inverse of covariance matrix and a random matrix in sparse grid design.
     * [sgd](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/SparseGrid/sgd.m) is a function file to generate a structure of sparse grid design.
    
   * [compute_pred](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/compute_pred.m) is a funciton file to compute prediction value of response (which is also the posterior mean) of nulti-dimensional Kriging.
@@ -37,13 +37,13 @@ Kernel Packet is a MATLAB package for fast computing in Gaussian Process Modelin
  
   
 ### Examples:
-  * [Example1D](https://github.com/HChen19/compact_support/blob/main/Example1D.m) is an example to use [compute_basis](https://github.com/HChen19/compact_support/blob/main/compute_basis.m) and [compute_post](https://github.com/HChen19/compact_support/blob/main/compute_post.m) function files. 
-  * [SGDesign](https://github.com/HChen19/compact_support/blob/main/SGDesign.m) is an example to use [sg_w](https://github.com/HChen19/compact_support/blob/main/sg_w.m) and [compute_pred](https://github.com/HChen19/compact_support/blob/main/compute_pred.m) in sparse grid design.
-  * [FGDeisgn](https://github.com/HChen19/compact_support/blob/main/LTDesign.m) is an example to compute multiplication of inverse of covariance matrix and response in lattice design (or called full grid design), then compute prediction value of response based on it.
-    * [ExampleMLE](https://github.com/HChen19/compact_support/blob/main/ExampleMLE.m) is an example to use [MLE_1d](https://github.com/HChen19/compact_support/blob/main/MLE_1d.m) and [MLE_sg](https://github.com/HChen19/compact_support/blob/main/MLE_sg.m) function files.
-
+  * [Example1D](https://github.com/HChen19/kernel_packet/blob/main/Example1D.m) is an example to use [compute_basis](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/compute_basis.m) and [compute_post](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/compute_post.m) function files. 
+  * [ExampleMLE](https://github.com/HChen19/kernel_packet/blob/main/ExampleMLE.m) is an example to use [mle_1d](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/mle_1d.m) and [sg_mle]((https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/SparseGrid/sg_mle.m) function files.
+  * [FGDeisgn](https://github.com/HChen19/kernel_packet/blob/main/FGDesign.m) is an example to compute multiplication of inverse of covariance matrix and response in full grid design, then compute prediction value of response based on it.
+  * [SGDesign](https://github.com/HChen19/kernel_packet/blob/main/SGDesign.m) is an example to use [sg_w](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/SparseGrid/sg_w.m) and [compute_pred](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/compute_pred.m) in sparse grid design.
+   
 ### Others:
-  * [tensor_toolbox-master](https://github.com/HChen19/kernel_packet/tree/main/tensor_toolbox-master) is a MATLAB tensor toolbox by Brett W. Bader, Tamara G. Kolda and others, we use [sparse tensor](https://www.tensortoolbox.org/sptensor_doc.html) function `<sptensor>` in our file [sg_w](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension/sg_w.m). For more information please see their official website [here](https://www.tensortoolbox.org/).
+  * [tensor_toolbox-master](https://github.com/HChen19/kernel_packet/tree/main/tensor_toolbox-master) is a MATLAB tensor toolbox by Brett W. Bader, Tamara G. Kolda and others, we use [sparse tensor](https://www.tensortoolbox.org/sptensor_doc.html) function `<sptensor>` in our file [sg_w](https://github.com/HChen19/kernel_packet/blob/main/Functions/Multi-Dimension/SparseGrid/sg_w.m). For more information please see their official website [here](https://www.tensortoolbox.org/).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
