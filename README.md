@@ -17,7 +17,7 @@ Kernel Packet is a MATLAB package for fast computing in Gaussian Process Modelin
   * [compute_basis](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/compute_basis.m) is a function file to compute kernel packet (which also our basis function) in one dimensional [Kriging (GPR)](https://en.wikipedia.org/wiki/Kriging).
   * [compute_post](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/compute_post.m) is a function file to to compute posterior mean and covariance in one dimensional Kriging.
   * [loglike_1d](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/loglike_1d.m) is a function file to compute log likelihood of parameter 'rho' in one dimension.
-  * [MLE_1d](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/MLE_1d.m) is a function file to compute updated parameter theta_hat, updated log likelihood L_hat and initial loglikelihood L_init in one dimensional MLE.
+  * [mle_1d](https://github.com/HChen19/kernel_packet/blob/main/Functions/One-Dimension/mle_1d.m) is a function file to compute updated parameter theta_hat, updated log likelihood L_hat and initial loglikelihood L_init in one dimensional MLE.
 
 
 * [Multi-Dimension](https://github.com/HChen19/kernel_packet/tree/main/Functions/Multi-Dimension):
