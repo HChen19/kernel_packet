@@ -2,8 +2,9 @@
 Kernel Packet is a MATLAB package for fast computing in Gaussian Process Modeling. 
 
 ## File Description
-* General functions:
-  * [matern_halfint](https://github.com/HChen19/kernel_packet/blob/main/matern_halfint.m) is a function file to compute [Mat&eacute;rn covariance matrix for half integer](https://en.wikipedia.org/wiki/Mat%C3%A9rn_covariance_function#Simplification_for_%CE%BD_half_integer).
+### Functions:
+* [General](https://github.com/HChen19/kernel_packet/tree/main/Functions/General): 
+  * [matern_halfint](https://github.com/HChen19/kernel_packet/blob/main/Functions/General/matern_halfint.m) is a function file to compute [Mat&eacute;rn covariance matrix for half integer](https://en.wikipedia.org/wiki/Mat%C3%A9rn_covariance_function#Simplification_for_%CE%BD_half_integer).
   * [hc](https://github.com/HChen19/kernel_packet/tree/main/Functions/General/DesignFunctions) is a function file to compute a vector with hyperbolic cross points (bisection).
   * [nsumk](https://github.com/HChen19/kernel_packet/blob/main/Functions/General/nsumk.m) is a function file to compute a partition matirx where n positive integers summing to k.
   * [bdlogdet](https://github.com/HChen19/kernel_packet/blob/main/Functions/General/bdlogdet.m) is a function file to compute log determinant of [band matrix](https://en.wikipedia.org/wiki/Band_matrix#:~:text=In%20mathematics%2C%20particularly%20matrix%20theory,more%20diagonals%20on%20either%20side.).
