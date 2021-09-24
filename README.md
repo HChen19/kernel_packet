@@ -1,4 +1,4 @@
-# Kernel Packaet
+# Kernel Packet
 Kernel Packet is a MATLAB package for fast computing in Gaussian Process Modeling. 
 
 ## File Description
